@@ -1,0 +1,45 @@
+using System;
+
+namespace Task2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double salary = double.Parse(Console.ReadLine());
+
+            if (salary >= 4000)
+            {
+                double salaryTax = (salary - 1000) * 0.1;
+                Console.WriteLine(salary - salaryTax);
+            }
+
+            else if (salary > 3000)
+            {
+                double sociaContributions = 2000 * 0.15;
+                double salaryTax = (salary - 1000) * 0.1;
+                Console.WriteLine(salary - (salaryTax + sociaContributions));
+
+            }
+
+            else if (salary > 2000)
+            {
+                double sociaContributions = 1000 * 0.15;
+                double salaryTax = (salary - 1000) * 0.1;
+                Console.WriteLine(salary - (salaryTax + sociaContributions));
+            }
+
+            else if (salary > 1000)
+            {
+                double sociaContributions = 1000 * 0.15;
+                double salaryTax = (salary - 1000) * 0.1;
+                Console.WriteLine(salary - (salaryTax + sociaContributions));
+            }
+
+            else if (salary <= 1000)
+            {
+                Console.WriteLine(salary);
+            }
+        }
+    }
+}

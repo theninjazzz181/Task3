@@ -1,0 +1,53 @@
+using System;
+
+namespace Task1
+{
+   public class MovieStar
+    {        
+        private string name;
+        private string nationality;
+        private string surname;
+        private string sex;
+        private DateTime dateOfBirth;      
+
+        public MovieStar(DateTime dateOfBirth, string name, string surname, 
+                         string nationality,string sex)
+        {
+            Name = name;
+            Surname = surname;
+            Nationality = nationality;
+            Sex = sex;    
+            DateOfBirth = dateOfBirth;
+        }
+
+        public DateTime DateOfBirth
+        {
+            get { return dateOfBirth; }
+            set { dateOfBirth = value; }
+        }
+
+        public string Name
+        {
+            get { return name; }
+            set { name = value; }
+        }
+
+        public string Nationality
+        {
+            get { return nationality; }
+            set { nationality = value; }
+        }
+
+        public string Surname
+        {
+            get { return surname; }
+            set { surname = value; }
+        }
+
+        public string Sex
+        {
+            get { return sex; }
+            set { sex = value; }
+        }
+    }
+}
